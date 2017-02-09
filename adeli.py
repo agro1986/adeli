@@ -3,8 +3,11 @@
 # agro1986@gmail.com
 
 
+from math import sqrt
+
+
 def matrix(i, j):
-    return [[0 for _ in range(j)] for _ in range(i)]
+    return [[0.0 for _ in range(j)] for _ in range(i)]
 
 
 def matrix_row(m):
@@ -13,6 +16,14 @@ def matrix_row(m):
 
 def matrix_col(m):
     return len(m[0])
+
+
+def frobenius_norm(m):
+    total = 0.0
+    for i in range(matrix_row(m)):
+        for j in range(matrix_col(m)):
+            total += m[i][j] * m[i][j]
+    return sqrt(total)
 
 
 def dot(x, y):
