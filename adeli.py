@@ -3,6 +3,18 @@
 # agro1986@gmail.com
 
 
+def matrix(i, j):
+    return [[0 for _ in range(j)] for _ in range(i)]
+
+
+def matrix_row(m):
+    return len(m)
+
+
+def matrix_col(m):
+    return len(m[0])
+
+
 def dot(x, y):
     len1 = len(x)
     len2 = len(y)
@@ -14,3 +26,4 @@ def dot(x, y):
         total += x[i] * y[i]
 
     return total
+

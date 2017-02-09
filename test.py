@@ -10,3 +10,8 @@ print(dot(a, b))
 #print(dot(a, c))
 
 print("Done")
+
+m = matrix(3, 2)
+print(m)
+print(matrix_row(m))
+print(matrix_col(m))
